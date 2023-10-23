@@ -4,5 +4,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Hello, Welcome To DevOps")
+    return HttpResponse("Hello, Let's Learn How DevOps Works!!")
 
