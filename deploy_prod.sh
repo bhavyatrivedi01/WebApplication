@@ -1,8 +1,6 @@
   ssh ubuntu@54.87.6.10 <<EOF
-  cd django
-  source myprojectenv/bin/activate
-  cd myprojectenv/WebApplication
+  cd django/myprojectenv/WebApplication
   git pull
-  python manage.py runserver 0.0.0.0:8000
+  sudo service apache2 restart
   exit
 EOF
