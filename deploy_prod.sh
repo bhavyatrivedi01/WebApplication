@@ -1,6 +1,10 @@
-  ssh ubuntu@3.87.105.130 <<EOF
-  cd django/myprojectenv/Blood-Bank-management-Python
+  ssh ubuntu@54.87.6.10 <<EOF
+  cd django
+  source myprojectenv/bin/activate
+  cd myprojectenv/WebApplication
   git pull
-  sudo service apache2 restart
+  python manage.py makemigrations
+  python manage.py migrate
+  python manage.py runserver 0.0.0.0:8000
   exit
 EOF
