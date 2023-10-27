@@ -1,4 +1,4 @@
-  ssh ubuntu@54.242.149.24 <<EOF
+  ssh ubuntu@34.201.44.45 <<EOF
   cd django/myprojectenv/WebApplication
   git pull
   pip install -r requirements.txt
