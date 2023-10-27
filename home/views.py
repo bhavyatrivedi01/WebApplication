@@ -4,5 +4,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Good morning, Welcome To Blood Donation Campaign!!!")
+    return HttpResponse("Good morning\\\\, Welcome To Blood Donation Campaign!!!")
 
