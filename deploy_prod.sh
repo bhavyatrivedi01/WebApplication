@@ -2,8 +2,9 @@
   cd django/myprojectenv/WebApplication
   git pull
   pip install -r requirements.txt
-  sudo ./manage.py makemigrations
-  sudo ./manage.py migrate --run-syncdb
+  chmod 477 manage.py
+  ./manage.py makemigrations
+  ./manage.py migrate --run-syncdb
   sudo service apache2 restart
   exit
 EOF
